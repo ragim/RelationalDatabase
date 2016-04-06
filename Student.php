@@ -8,7 +8,7 @@
  */
 class Student
 {
-    public $name, $phone, $email, $bday, $group, $class, $ID;
+    private $name, $phone, $email, $bday, $group, $class, $ID;
 
     /**
      * Student constructor.

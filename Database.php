@@ -85,13 +85,13 @@ class Database
         foreach($students_array as $student)
         {
             echo "<tr>";
-                echo "<td>$student->name</td>";
-                echo "<td>$student->phone</td>";
-                echo "<td>$student->email</td>";
-                echo "<td>$student->bday</td>";
-                echo "<td>$student->group</td>";
-                echo "<td>$student->class</td>";
-                echo "<td><a href='delete.php?id=$student->ID'>DELETE</a></td>";
+                echo "<td>".$student->getName()."</td>";
+                echo "<td>".$student->getPhone()."</td>";
+                echo "<td>".$student->getEmail()."</td>";
+                echo "<td>".$student->getBday()."</td>";
+                echo "<td>".$student->getGroup()."</td>";
+                echo "<td>".$student->getClass()."</td>";
+                echo "<td><a href='delete.php?id=".$student->getID()."'>DELETE</a></td>";
             echo "</tr>";
         }
         echo "</table>";
