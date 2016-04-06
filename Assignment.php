@@ -6,7 +6,7 @@
  * Time: 19:34
  */
 class Assignment{
-    public $name, $date, $id;
+    private $name, $date, $id;
 
     /**
      * Assignment constructor.
@@ -19,6 +19,30 @@ class Assignment{
         $this->name = $name;
         $this->date = $date;
         $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
 }

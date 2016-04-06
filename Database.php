@@ -104,15 +104,15 @@ class Database
         echo "<tr>";
         echo "<th>Name</th>";
         echo "<th>Date</th>";
-        echo "<th>Delete</th>";
+        echo "<th>Student_id</th>";
         echo "</tr>";
 
         foreach($assignments_array as $assign)
         {
             echo "<tr>";
-            echo "<td>$assign->name</td>";
-            echo "<td>$assign->date</td>";
-            echo "<td><a href='delete.php?id=$assign->id'>DELETE</a></td>";
+            echo "<td>".$assign->getName()."</td>";
+            echo "<td>".$assign->getDate()."</td>";
+            echo "<td>".$assign->getID()."</td>";
             echo "</tr>";
         }
         echo "</table>";
