@@ -11,8 +11,8 @@
 
         $host = "localhost";
         $dbUsername = "root";
-        $dbName = "codeacademy";
-        $dbPassword = "qwerty123";
+        $dbName = "temp";
+        $dbPassword = "";
         $db = new Database($host,$dbUsername,$dbPassword,$dbName);
         $connection = $db->getConnection();
         $db->displayStudents($connection);
